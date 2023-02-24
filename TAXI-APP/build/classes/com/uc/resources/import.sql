@@ -13,4 +13,5 @@ username varchar(30) not null,
 password varchar(30) not null
 );
 insert into registration values(1000, 'Joshua', 'joshuapraveen99@gmail.com' , 8925371868,'Vandalur', LOAD_FILE("C:\ProgramData\MySQL\MySQL Server 8.0\Uploads\Profile pic.jpg"),'joshua33','poster');
+insert into registration values(1004, 'Joshua', 'joshuapraveen99@gmail.com' , 8925371868,'Vandalur', LOAD_FILE("C:\ProgramData\MySQL\MySQL Server 8.0\Uploads\Profile pic.jpg"),'joshua33','poster');
 commit;
