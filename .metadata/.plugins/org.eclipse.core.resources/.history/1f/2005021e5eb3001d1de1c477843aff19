@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<welcome-file-list>
+      <welcome-file>Registraion.jsp</welcome-file>
+  </welcome-file-list>
+  <listener>
+    <listener-class>
+       	     org.springframework.web.context.ContextLoaderListener
+       	 	</listener-class>
+  </listener>
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>
+    		/WEB-INF/cst-root-ctx.xml    
+        </param-value>
+  </context-param>
+  <listener>
+  		<listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
+ </listener>
+  <context-param>
+ 		 <param-name>log4jConfigLocation</param-name>
+  		 <param-value>classpath:com/accenture/lkm/resources/log4j.xml</param-value>
+ </context-param>
+  <servlet>
+    <servlet-name>cstspconf-web</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>cstspconf-web</servlet-name>
+    <url-pattern>*.html</url-pattern>
+  </servlet-mapping>
+</web-app>
