@@ -14,9 +14,7 @@
     		/WEB-INF/cst-root-ctx.xml    
         </param-value>
   </context-param>
-  <listener>
-  		<listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
- </listener>
+
   <servlet>
     <servlet-name>cstspconf-web</servlet-name>
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>

@@ -1,5 +1,9 @@
 package com.uc.service;
 
-public class LoginService {
+import com.uc.entity.LoginEntity;
+
+public interface LoginService {
+
+	LoginEntity validLogin(String userName) throws Exception;
 
 }
